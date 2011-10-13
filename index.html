@@ -1,18 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" />
-    <link href="http://microformats.org/profile/hcard" rel="profile" />
-    <title>Resume of Oskar Schöldström</title>
+
+    <title>Resume of Oskar Schöldström - Web Developer</title>
+
     <link rel="stylesheet" href="stylesheets/css/normalize.css" media="all" />
     <link rel="stylesheet" href="stylesheets/css/stylesheet.css" media="all" />
+
+    <link href="http://microformats.org/profile/hcard" rel="profile" />
+    <link href="http://microformats.org/profile/hresume" rel="profile" />
+
+    <meta name="author" content="Oskar Schöldström (oxy)" />
+    <meta name="description" content="Resume of Oskar Schöldström, a web developer from Finland" />
+
   </head>
-  <body>
-    <header class="vcard">
+  <body class="hresume">
+    <header role="banner" class="vcard contact">
       <hgroup>
-        <h1><a class="url fn" href="">Oskar Schöldström</a></h1>
+        <h1><a class="url fn" href="http://oxyc.github.com">Oskar Schöldström</a></h1>
         <h2 class="title">Web Developer</h2>
       </hgroup>
       <span class="fn nickname">oxy</span>
@@ -23,16 +30,16 @@
         <span class="country-name">Finland</span>
       </span>
       <ul>
-        <li><a class="email" href="">public@oxy.fi</a></li>
+        <li><a class="email" href="mailto:public@oxy.fi">public@oxy.fi</a></li>
         <li class="tel">+358 (0) 453 412 227</li>
       </ul>
     </header>
     <section>
       <h1>Profile</h1>
       <div>
-        <p>I'm a web developer at the age of 22 with a passion for <b class="strong">best practice</b> and <b class="strong">semantics</b>, some times in the sence of a perfectionst. I have a constant urge to further myself with learning, and this makes <b class="strong">web development</b> and <b class="strong">front-end</b> development specifically my optimal field. My free time is often occupied by digging into language specification or keeping up with the web on my feed reader&hellip; which never dries out.</p>
+        <p class="summary">I'm a web developer at the age of 22 with a passion for <b class="strong">best practice</b> and <b class="strong">semantics</b>&mdash;some times in the sense of a perfectionst. I have a constant urge to further myself with learning, and this makes <b class="strong">web development</b> and more specifically <b class="strong">front-end</b> development my optimal field. My free time is often occupied by digging into language specifications or keeping up with the web thanks to my neverending feed list.</p>
         <p>Currently I'm self-employed planning, implementing, launching and maintaining <b class="strong">Drupal</b> built websites with a partner webdesign company.</p>
-        <p>Besides the techincal bit I'm stationed in Helsinki, Finland and I'm fluent in <b class="strong">Swedish</b> and <b class="strong">English</b>, while I have a weak understanding of <b class="weak">Finnish</b>.</p>
+        <p>Besides the techincal bit I'm stationed in Helsinki, Finland and I'm fluent in <b class="strong">Swedish</b> and <b class="strong">English</b>, and with a basic understanding of <b class="weak">Finnish</b>.</p>
       </div>
     </section>
     <section>
@@ -48,73 +55,73 @@
         </li>
         <li>
           <h2>Semantics</h2>
-          <p>I value <b class="strong">semantical code</b> in programming as well as markup. Long live the <b class="strong">DRY principle</b>.</p>
+          <p>I value <b class="strong">semantical code</b> in programming as well as markup. Trying to live up to the <b class="strong">DRY principle</b> is a daily task as well.</p>
         </li>
         <li>
           <h2>Optimization</h2>
-          <p>I know why * is the most evil selector and I know what triggers a reflow.</p>
+          <p>I know why * is the most evil selector, I know what triggers a reflow and I know how many domains trigger the DNS lookup penalty.</p>
         </li>
       </ul>
     </section>
     <section>
       <h1>Technical</h1>
       <ul class="grid">
-        <li><abbr class="strong" title="HyperText Markup Language">HTML</b></li>
-        <li><abbr class="strong" title="Cascading Style Sheets">CSS</b></li>
-        <li><b class="strong">JavaScript</b></li>
-        <li><b class="average" title="A content management system">Drupal</b></li>
-        <li><abbr class="average" title="Hypertext Preprocessor">PHP</b></li>
-        <li><b class="average" title="A relational database">MySQL</b></li>
-        <li><b class="strong" title="A Node.JS CSS preprocessor">Stylus</b></li>
-        <li><b class="strong" title="A JavaScript library">jQuery</b></li>
-        <li><b class="strong" title="Make that data readable">Microformats</b></li>
-        <li><abbr class="strong" title="Search Engine Optimization">SEO</b></li>
-        <li><abbr class="average" title="VImproved">vim</b></li>
-        <li><b class="average">Linux</b></li>
-        <li><b class="average">Bash</b></li>
-        <li><b class="weak">git</b></li>
-        <li><b class="weak">Ruby</b></li>
-        <li><b class="weak">Python</b></li>
-        <li><b class="average">Java</b></li>
-        <li><b class="weak">C++</b></li>
+        <li><abbr class="skill strong" title="HyperText Markup Language">HTML</b></li>
+        <li><abbr class="skill strong" title="Cascading Style Sheets">CSS</b></li>
+        <li><b class="skill strong">JavaScript</b></li>
+        <li><b class="skill average" title="A content management system">Drupal</b></li>
+        <li><abbr class="skill average" title="Hypertext Preprocessor">PHP</b></li>
+        <li><b class="skill average" title="A relational database">MySQL</b></li>
+        <li><b class="skill strong" title="A Node.JS CSS preprocessor">Stylus</b></li>
+        <li><b class="skill strong" title="A JavaScript library">jQuery</b></li>
+        <li><b class="skill strong" title="Make that data readable">Microformats</b></li>
+        <li><abbr class="skill strong" title="Search Engine Optimization">SEO</b></li>
+        <li><abbr class="skill average" title="VImproved">vim</b></li>
+        <li><b class="skill average">Linux</b></li>
+        <li><b class="skill average">Bash</b></li>
+        <li><b class="skill weak">git</b></li>
+        <li><b class="skill weak">Ruby</b></li>
+        <li><b class="skill weak">Python</b></li>
+        <li><b class="skill average">Java</b></li>
+        <li><b class="skill weak">C++</b></li>
         </li>
       </ul>
     </section>
     <section>
       <h1>Portfolio</h1>
-      <ol>
-        <li>
+      <ol class="vcalendar">
+        <li class="experience vevent">
           <article>
             <h2><a href="http://www.herrgardsglass.fi">Herrgårds Glass</a></h2>
             <footer>
-              <time datetime="2011-09-01">2011</time>
+              <time class="dtstart dtend" title="2011-09-01" datetime="2011-09-01">2011</time>
             </footer>
-            <p>Implemented a responsive website with Drupal, jQuery for a recently opened company making their own ice cream. User Experience was important as well as an easy way for customers to make orders in batch.</p>
+            <p>Implemented a responsive website with Drupal, jQuery for a recently opened company producing their own ice cream. User Experience was important as well as an easy way for customers to make batch orders.</p>
           </article>
         </li>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="http://www.papaya.fi">Papaya - Salladscafé</a></h2>
             <footer>
-              <time datetime="2011-08-01">2011</time>
+              <time class="dtstart dtend" title="2011-08-01" datetime="2011-08-01">2011</time>
             </footer>
-            <p>Papaya a small café in Tammisaari needed a simple informational site so we delivered an easily managable website to keep customers informed of the weeks lunch menu. Works well on mobile devices as well.
+            <p>Papaya, a small café in Tammisaari, needed a simple informational site so we delivered an easily managable website to keep customers informed of the weeks lunch menu. Works well on mobile devices as well.
           </article>
         </li>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="http://www.nordangolf.fi">Nordangolf</a></h2>
             <footer>
-              <time datetime="2011-04-01">2011</time>
+              <time class="dtstart dtend" title="2011-04-01" datetime="2011-04-01">2011</time>
             </footer>
             <p>Nordan Oy ordered a site for a new project of theirs, namely a company arranging golf tours within Finland for Russian tourists. So far the project hasn't kicked of.</p>
           </article>
         </li>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="http://johankvarnstrom.com">Johan Kvarnström - Blogg</a></h2>
             <footer>
-              <time datetime="2010-08-01">2010</time>
+              <time class="dtstart dtend" title="2010-09-01" datetime="2010-09-01">2010</time>
             </footer>
             <p>Rap artist Johan Kvarnström was in need of a personal blog where he could share his love for music and poetry. This was done as a pro-bono project as he's a friend of a friend and most importantly, he's kind enough to share his music to the world for free.</p>
           </article>
@@ -124,95 +131,98 @@
     <section>
       <h1>Experiments</h1>
       <ol>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="http://www.chromeexperiments.com/detail/back-to-visuals/">Back to Visuals</a></h2>
             <footer>
-              <time datetime="2011-09-01">2011</time>
+              <time class="dtstart dtend" title="2011-02-01" datetime="2011-02-01">2011</time>
             </footer>
-            <p>Created a visual JavaScript demo for a LAN-party, later submitted to Chrome Experiments. Source can be found in the <a href="https://github.com/oxyc/Back-to-Visuals">github repo</a>.</p>
+            <p>I created a visual JavaScript demo for a LAN-party, later submitted to Chrome Experiments. Source can be found in the <a href="https://github.com/oxyc/Back-to-Visuals">github repo</a>.</p>
           </article>
         </li>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="https://github.com/oxyc/Chrome-Extensions/tree/master/TransactionExporter">Transaction Exporter</a></h2>
             <footer>
-              <time datetime="2011-09-01">2011</time>
+              <time class="dtstart dtend" title="2011-09-01" datetime="2011-09-01">2011</time>
             </footer>
             <p>A Chrome extension to pull data from Nordea and OP and push it into a Google Spreadsheet for filtering and archiving.</p>
           </article>
         </li>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="https://github.com/oxyc/base">Drupal base theme</a></h2>
             <footer>
-              <time datetime="2011-09-01">2011</time>
+              <time class="dtstart dtend" title="2011-09-01" datetime="2011-09-01">2011</time>
             </footer>
             <p>A base theme for Drupal sites using Stylus CSS-preprocessor. Ongoing project to be released later.</p>
           </article>
         </li>
-        <li>
+        <li class="experience vevent">
           <article>
             <h2><a href="https://github.com/oxyc/stylus">Drupal stylus module</a></h2>
             <footer>
-              <time datetime="2011-10-01">2011</time>
+              <time class="dtstart dtend" title="2011-10-01" datetime="2011-10-01">2011</time>
             </footer>
-            <p>A Stylus module for Drupal with a very domain-specific solution. Namely developers with a dev station with Node.JS access and a production station without.</p>
+            <p>A Stylus module for Drupal with a very domain-specific solution. Namely developers using a dev station with Node.JS access and a production station without.</p>
           </article>
         </li>
       </ol>
     </section>
     <section>
       <h1>Education</h1>
-      <ol>
-        <li>
+      <ol class="vcalendar">
+        <li class="education vevent">
           <article>
-            <h2>Arcada</h2>
+            <h2><a class="url summary" href="http://www.arcada.fi">Arcada</a></h2>
             <footer>
-              <time>2010&ndash;2013</time>
+              <time class="dtstart" title="2010-08-01">2010</time>&ndash;<time class="dtend" title="2013-05-01">2013</time>
             </footer>
-            <p>Second year Information Technology Student with a GPA of <em>3.7</em> so far.</p>
+            <p>Second year Information Technology Student with a GPA of <strong>3.7</strong> so far.</p>
           </article>
         </li>
       </ol>
     </section>
-    <footer>
+    <footer role="contentinfo">
       <ul class="external social">
-          <li>
-              <a class="sprite google" href="https://profiles.google.com/Oskar.Scholdstrom/" rel="external" title="Google Profile - Oskar.Scholdstrom">
-                  <span class="visuallyhidden">Google Reader</span>
-              </a>
-          </li>
-          <li>
-              <a class="sprite facebook" href="http://www.facebook.com/oskar.scholdstrom" rel="external" title="Facebook - Oskar.Scholdstrom">
-                  <span class="visuallyhidden">Facebook</span>
-              </a>
-          </li>
-          <li>
-              <a class="sprite linkedin" href="http://fi.linkedin.com/in/scholdstrom" rel="external" title="LinkedIn - scholdstrom">
-                  <span class="visuallyhidden">LinkedIn</span>
-              </a>
-          </li>
-          <li>
-              <a class="sprite github" href="http://github.com/oxyc" rel="external" title="Github - Oxyc">
-                  <span class="visuallyhidden">Github</span>
-              </a>
-          </li>
-          <li>
-              <a class="sprite flickr" href="http://flickr.com/people/oxyc/" rel="external" title="flickr - Oxyc">
-                  <span class="visuallyhidden">flickr</span>
-              </a>
-          </li>
-          <li>
-              <a class="sprite twitter" href="http://twitter.com/scholdstrom" rel="external" title="Twitter - @scholdstrom">
-                  <span class="visuallyhidden">Twitter</span>
-              </a>
-          </li>
+        <li>
+          <a class="sprite google" href="https://profiles.google.com/Oskar.Scholdstrom/" rel="external" title="Google Profile - Oskar.Scholdstrom">
+            <span class="visuallyhidden">Google Reader</span>
+          </a>
+        </li>
+        <li>
+          <a class="sprite facebook" href="http://www.facebook.com/oskar.scholdstrom" rel="external" title="Facebook - Oskar.Scholdstrom">
+            <span class="visuallyhidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="sprite linkedin" href="http://fi.linkedin.com/in/scholdstrom" rel="external" title="LinkedIn - scholdstrom">
+            <span class="visuallyhidden">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="sprite github" href="http://github.com/oxyc" rel="external" title="Github - Oxyc">
+            <span class="visuallyhidden">Github</span>
+          </a>
+        </li>
+        <li>
+          <a class="sprite flickr" href="http://flickr.com/people/oxyc/" rel="external" title="flickr - Oxyc">
+            <span class="visuallyhidden">flickr</span>
+          </a>
+        </li>
+        <li>
+          <a class="sprite twitter" href="http://twitter.com/scholdstrom" rel="external" title="Twitter - @scholdstrom">
+            <span class="visuallyhidden">Twitter</span>
+          </a>
+        </li>
       </ul>
-      <p>Want to use this resume as a template for your own? <a href="">Fork it on github</a>.</p>
+      <p>Want to use this resume as a template for your own? <a href="https://github.com/oxyc/oxyc.github.com">Fork it on github</a>.</p>
     </footer>
     <script>
-
+// Fix device-width scalability crossbrowser
+// https://gist.github.com/901295
+// By @mathias, @cheeaun and @jdalton
+(function(doc) {var addEvent = 'addEventListener',type = 'gesturestart',qsa = 'querySelectorAll',scales = [1, 1],meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];function fix() {meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];doc.removeEventListener(type, fix, true);}if ((meta = meta[meta.length - 1]) && addEvent in doc) {fix();scales = [.25, 1.6];doc[addEvent](type, fix, true);}}(document));
     </script>
   </body>
 </html>
