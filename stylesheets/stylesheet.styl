@@ -15,7 +15,7 @@ body
   max-width: 800px
   min-height: 100%
   margin: 0 auto
-  padding: 0 $lineheight
+  padding: 0 1em
   font: normal 400 $fontsize/$lineheight Georgia, serif
   color: #444
   background: #fefefe
@@ -55,7 +55,7 @@ header
 
   hgroup
     h1
-      font-size: 3em
+      font-size: 2em
       line-height: 1.5
 
       a, a:visited
@@ -93,6 +93,11 @@ section
 
   & > ol, & > ul, & > div
     overflow: hidden
+
+  ul li
+    display: inline-block
+    float: left
+
 
 .grid li
   width: 50%
@@ -146,6 +151,9 @@ footer p
     background-position: 0 -102px
 
 @media screen and (min-width: 800px)
+  header hgroup h1
+    font-size: 3em
+
   section h1
     float: left
     width: 7em
@@ -158,10 +166,8 @@ footer p
 
 @media screen and (min-width: 480px)
   section ul li
-    display: inline-block
     width: 48%
     margin-right: 4%
-    float: left
 
     &:nth-child(2n)
       margin-right: 0
