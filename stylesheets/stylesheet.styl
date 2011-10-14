@@ -172,6 +172,16 @@ footer p
     height: 46px
     background-position: -18px -2px
 
+::-moz-selection
+  background: #fa2
+  color: #fff
+  text-shadow: none
+
+::selection
+  background: #fa2
+  color: #fff
+  text-shadow: none
+
 @media screen and (min-width: 1100px)
   .download
     right: -55px
@@ -204,16 +214,15 @@ footer p
 
 @media print
   body
-    padding: 0 ($lineheight * 3)
+    padding: 0
+  header
+    padding-top: 0
+
   header hgroup h1
     font-size: 3em
 
   section
-    h1
-      float: left
-      width: 7em
-      border-bottom: 0
-      margin-bottom: 0
+    vertical-align: top
     ul li
       width: 45%
       margin-right: 4%
@@ -249,10 +258,10 @@ footer p
   img
     max-width: 100% !important
   @page
-    margin: 0.5cm
+    margin: 2cm
   p, h2, h3
     orphans: 3
     widows: 3
-  h2, h3
+  h1, h2, h3
     page-break-after: avoid
 
