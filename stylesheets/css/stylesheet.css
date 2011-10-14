@@ -134,7 +134,8 @@ article h2,
 article footer {
   display: inline;
 }
-article time {
+article footer {
+  float: right;
   color: #888;
   margin-left: 0.25em;
 }
@@ -276,7 +277,7 @@ footer p {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
   a[href]:not(.sprite):not(.email):not(.fn):after {
     content: " (" attr(href) ")";
