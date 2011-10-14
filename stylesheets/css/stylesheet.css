@@ -12,6 +12,7 @@ body {
   color: #444;
   background: #fefefe;
   box-shadow: 0 0 3px #aaa;
+  position: relative;
 }
 p {
   margin-top: 0;
@@ -27,6 +28,11 @@ h1,
 h2 {
   color: #222;
   margin: 0;
+  text-shadow: 1px 1px 1px #bbb;
+}
+h2 {
+  font-weight: normal;
+  text-shadow: none;
 }
 section h1 {
   font-size: 1.5em;
@@ -42,6 +48,7 @@ abbr {
   padding: 0 0.25em;
   margin-bottom: -1px;
   font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
 }
 b.weak,
 abbr.weak {
@@ -51,20 +58,23 @@ header {
   padding-top: 1.5em;
   text-align: center;
 }
-header hgroup h1 {
+header h1,
+header h2 {
+  font-family: "Times New Roman", serif;
+}
+header h1 {
   font-size: 2em;
   line-height: 1.5;
 }
-header hgroup h1 a,
-header hgroup h1 a:visited {
+header h1 a,
+header h1 a:visited {
   color: #222;
   text-decoration: none;
 }
-header hgroup h2 {
+header h2 {
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 0.5em;
-  font-weight: normal;
 }
 footer[role="contentinfo"] {
   border-top: solid 1px #888;
@@ -74,6 +84,14 @@ footer[role="contentinfo"] {
 }
 footer[role="contentinfo"] p {
   margin-bottom: 2em;
+}
+.download {
+  position: absolute;
+  top: 10.5em;
+  right: 1.5em;
+}
+.download h1 {
+  display: none;
 }
 section {
   margin: 1.5em 0;
@@ -85,7 +103,6 @@ section h1 {
   margin-top: -0.083333em;
 }
 section h2 {
-  font-weight: normal;
   font-size: 1.24em;
   line-height: 1;
   margin-bottom: 0.25em;
@@ -96,7 +113,8 @@ section > div {
   overflow: hidden;
 }
 section ul li {
-  display: inline-block;
+  display: inline;
+  width: 100%;
   float: left;
 }
 .grid li {
@@ -129,38 +147,54 @@ footer p {
 .vcard span {
   display: none;
 }
+.social li {
+  float: left;
+  margin-right: 0.5em;
+}
 .sprite {
   background: url("../../assets/sprite.png") no-repeat top left;
   width: 16px;
   height: 16px;
-  margin-right: 0.5em;
-  float: left;
   text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
 }
 .sprite.email {
   background-position: 0 0;
 }
 .sprite.facebook {
-  background-position: 0 -17px;
+  background-position: 0 -18px;
 }
 .sprite.flickr {
-  background-position: 0 -34px;
+  background-position: 0 -36px;
 }
 .sprite.github {
-  background-position: 0 -51px;
+  background-position: 0 -54px;
 }
 .sprite.google {
-  background-position: 0 -68px;
+  background-position: 0 -72px;
 }
 .sprite.linkedin {
-  background-position: 0 -85px;
+  background-position: 0 -90px;
 }
 .sprite.twitter {
-  background-position: 0 -102px;
+  background-position: 0 -108px;
+}
+.sprite.pdf {
+  width: 38px;
+  height: 46px;
+  background-position: -18px -2px;
+}
+@media screen and (min-width: 1100px) {
+  .download {
+    right: -55px;
+  }
 }
 @media screen and (min-width: 800px) {
   header hgroup h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    line-height: 1.286;
   }
   section h1 {
     float: left;
@@ -200,13 +234,14 @@ footer p {
     margin-bottom: 0;
   }
   section ul li {
-    width: 48%;
+    width: 45%;
     margin-right: 4%;
   }
   section ul li:nth-child(2n) {
     margin-right: 0;
   }
   section ul.grid li {
+    margin-right: 0;
     width: 33%;
   }
   b,
@@ -216,7 +251,8 @@ footer p {
     padding: 0;
     margin: 0;
   }
-  footer[role="contentinfo"] {
+  footer[role="contentinfo"],
+  .download {
     display: none;
   }
   * {
@@ -240,7 +276,6 @@ footer p {
   }
   tr,
   img,
-  section,
   article {
     page-break-inside: avoid;
   }

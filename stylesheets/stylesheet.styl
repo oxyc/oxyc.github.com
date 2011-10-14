@@ -20,6 +20,7 @@ body
   color: #444
   background: #fefefe
   box-shadow: 0 0 3px #aaa
+  position: relative
 
 p
   margin-top: 0
@@ -33,6 +34,11 @@ ul, ol
 h1, h2
   color: #222
   margin: 0
+  text-shadow: 1px 1px 1px #bbb
+
+h2
+  font-weight: normal
+  text-shadow: none
 
 section h1
   font-size: 1.5em
@@ -45,6 +51,7 @@ b, abbr
   padding: 0 .25em
   margin-bottom: -1px
   font-weight: bold
+  text-shadow 1px 1px 1px #fff
 
   &.weak
     font-weight: normal
@@ -53,20 +60,20 @@ header
   padding-top: $lineheight
   text-align: center
 
-  hgroup
-    h1
-      font-size: 2em
-      line-height: 1.5
+  h1, h2
+    font-family: "Times New Roman", serif
 
-      a, a:visited
-        color: #222
-        text-decoration: none
-    h2
-      font-size: 1.5em
-      line-height: 1.5
-      margin-bottom: .5em
-      font-weight: normal
+  h1
+    font-size: 2em
+    line-height: 1.5
 
+    a, a:visited
+      color: #222
+      text-decoration: none
+  h2
+    font-size: 1.5em
+    line-height: 1.5
+    margin-bottom: .5em
 
 footer[role="contentinfo"]
   border-top: solid 1px #888
@@ -75,6 +82,13 @@ footer[role="contentinfo"]
   font-size: .75em
   p
     margin-bottom: 2em
+
+.download
+  position: absolute
+  top: $lineheight*7
+  right: $lineheight
+  h1
+    display: none
 
 section
   margin: $lineheight 0
@@ -86,7 +100,6 @@ section
     margin-top: -0.083333em
 
   h2
-    font-weight: normal
     font-size: 1.24em
     line-height: 1
     margin-bottom: .25em
@@ -95,7 +108,8 @@ section
     overflow: hidden
 
   ul li
-    display: inline-block
+    display: inline
+    width: 100%
     float: left
 
 
@@ -128,32 +142,44 @@ footer p
 .vcard span
   display: none
 
+.social li
+  float:left
+  margin-right: .5em
+
 .sprite
   background: url('../../assets/sprite.png') no-repeat top left
   width: 16px
   height: 16px
-  margin-right: .5em
-  float: left
   text-decoration: none
+  inline-block()
   
   &.email
     background-position: 0 0
   &.facebook
-    background-position: 0 -17px
+    background-position: 0 -18px
   &.flickr
-    background-position: 0 -34px
+    background-position: 0 -36px
   &.github
-    background-position: 0 -51px
+    background-position: 0 -54px
   &.google
-    background-position: 0 -68px
+    background-position: 0 -72px
   &.linkedin
-    background-position: 0 -85px
+    background-position: 0 -90px
   &.twitter
-    background-position: 0 -102px
+    background-position: 0 -108px
+  &.pdf
+    width: 38px
+    height: 46px
+    background-position: -18px -2px
+
+@media screen and (min-width: 1100px)
+  .download
+    right: -55px
 
 @media screen and (min-width: 800px)
   header hgroup h1
-    font-size: 3em
+    font-size: 3.5em
+    line-height: 1.286
 
   section h1
     float: left
@@ -189,11 +215,12 @@ footer p
       border-bottom: 0
       margin-bottom: 0
     ul li
-      width: 48%
+      width: 45%
       margin-right: 4%
       &:nth-child(2n)
         margin-right: 0
     ul.grid li
+      margin-right:0
       width: 33%
 
   b, abbr
@@ -202,7 +229,7 @@ footer p
     padding: 0
     margin: 0
 
-  footer[role="contentinfo"]
+  footer[role="contentinfo"], .download
     display: none
 
   *
@@ -217,7 +244,7 @@ footer p
     content: " (" attr(href) ")"
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after
     content: ""
-  tr, img, section, article
+  tr, img, article
     page-break-inside: avoid
   img
     max-width: 100% !important

@@ -15,6 +15,9 @@
     <meta name="author" content="Oskar Schöldström (oxy)" />
     <meta name="description" content="Resume of Oskar Schöldström, a web developer from Finland" />
 
+    <!--[if lt IE 9 ]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body class="hresume">
     <header role="banner" class="vcard contact">
@@ -66,17 +69,17 @@
     <section>
       <h1>Technical</h1>
       <ul class="grid">
-        <li><abbr class="skill strong" title="HyperText Markup Language">HTML</b></li>
-        <li><abbr class="skill strong" title="Cascading Style Sheets">CSS</b></li>
+        <li><abbr class="skill strong" title="HyperText Markup Language">HTML</abbr></li>
+        <li><abbr class="skill strong" title="Cascading Style Sheets">CSS</abbr></li>
         <li><b class="skill strong">JavaScript</b></li>
         <li><b class="skill average" title="A content management system">Drupal</b></li>
-        <li><abbr class="skill average" title="Hypertext Preprocessor">PHP</b></li>
+        <li><abbr class="skill average" title="Hypertext Preprocessor">PHP</abbr></li>
         <li><b class="skill average" title="A relational database">MySQL</b></li>
         <li><b class="skill strong" title="A Node.JS CSS preprocessor">Stylus</b></li>
         <li><b class="skill strong" title="A JavaScript library">jQuery</b></li>
         <li><b class="skill strong" title="Make that data readable">Microformats</b></li>
-        <li><abbr class="skill strong" title="Search Engine Optimization">SEO</b></li>
-        <li><abbr class="skill average" title="VImproved">vim</b></li>
+        <li><abbr class="skill strong" title="Search Engine Optimization">SEO</abbr></li>
+        <li><abbr class="skill average" title="Vi IMproved">vim</abbr></li>
         <li><b class="skill average">Linux</b></li>
         <li><b class="skill average">Bash</b></li>
         <li><b class="skill weak">git</b></li>
@@ -184,6 +187,12 @@
       </ol>
     </section>
     <footer role="contentinfo">
+      <section class="download">
+        <h1>Download Resume</h1>
+        <ul>
+          <li><a class="sprite pdf" href="#" title="Download as PDF"><span class="visuallyhidden">Download as PDF</span></a></li>
+        </ul>
+      </section>
       <ul class="external social">
         <li>
           <a class="sprite google" href="https://profiles.google.com/Oskar.Scholdstrom/" rel="external" title="Google Profile - Oskar.Scholdstrom">
@@ -224,8 +233,5 @@
       // By @mathias, @cheeaun and @jdalton
       (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
     </script>
-    <!--if[if lt IE 9 ]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     </body>
 </html>
